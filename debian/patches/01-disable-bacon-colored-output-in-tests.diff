@@ -1,0 +1,14 @@
+Description: Disable usage of bacon-colored-output gem since is not packaged
+Author: Miguel Landaeta <nomadium@debian.org>
+Forwarded: no
+Last-Update: 2016-12-29
+
+--- ruby-ast-2.3.0.orig/test/helper.rb
++++ ruby-ast-2.3.0/test/helper.rb
+@@ -1,5 +1,5 @@
+ require 'bacon'
+-require 'bacon/colored_output'
++# require 'bacon/colored_output'
+ 
+ require 'simplecov'
+ require 'coveralls'

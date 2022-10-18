@@ -1,0 +1,37 @@
+Source: ruby-ast
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Miguel Landaeta <nomadium@debian.org>,
+           Utkarsh Gupta <utkarsh@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               rake,
+               ruby-bacon,
+               ruby-coveralls,
+               ruby-simplecov
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-ast.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-ast
+Homepage: https://whitequark.github.io/ast/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-ast
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: Ruby library for working with abstract syntax trees
+ ast embraces immutability; each AST node is inherently frozen at
+ creation, and updating a child node requires recreating that node
+ and its every parent, recursively.
+ .
+ This is a design choice. It does create some pressure on
+ garbage collector, but completely eliminates all concurrency
+ and aliasing problems.
+ .
+ See also AST::Node, AST::Processor::Mixin and AST::Sexp classes for
+ additional recommendations and design patterns.

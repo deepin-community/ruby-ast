@@ -1,0 +1,36 @@
+ruby-ast (2.4.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Abraham Raji ]
+  * New upstream version 2.4.1
+  * Updated d/watch to pull g/h tarball
+
+  [ Utkarsh Gupta ]
+  * Add myself as an uploader
+
+ -- Abraham Raji <avronr@tuta.io>  Mon, 29 Jun 2020 18:15:38 +0000
+
+ruby-ast (2.4.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 10 to 12.
+
+  [ Balasankar C ]
+  * New upstream release.
+  * Declare Rules-Requires-Root
+  * Drop dependencies on ruby | ruby-interpreter
+
+ -- Balasankar C <balasankarc@debian.org>  Thu, 06 Feb 2020 20:45:51 +0530
+
+ruby-ast (2.3.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #849496)
+
+ -- Miguel Landaeta <nomadium@debian.org>  Thu, 29 Dec 2016 15:48:17 +0000
